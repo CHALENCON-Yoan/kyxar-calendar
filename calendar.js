@@ -1,6 +1,5 @@
 window.addEventListener("load", async () => {
     const events = await getEvents();
-    console.log(events);
     displayEvents(events);
 })
 
@@ -20,7 +19,6 @@ function displayEvents(events) {
     const [year, month, day] = firstDayDisplayMonthInput.value.split("-");
 
     for (const event of events) {
-        console.log("a event", event);
         const [eventYear, eventMonth, eventDay] = event["event_date"].split("-");
         if (eventYear === year && eventMonth === month) {
             const cellEvent = document.getElementById("day" + eventDay);
