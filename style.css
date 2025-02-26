@@ -1,0 +1,77 @@
+:root {
+    font-family: Aptos, Arial, sans-serif;
+}
+
+body,
+p,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 8px 0;
+}
+
+form {
+    display: flex;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.calendar-row {
+    width: 100%;
+    display: flex;
+}
+
+.calendar-header-cell {
+    font-weight:bold ;
+    text-align: center;
+}
+
+.calendar-cell {
+    height: 50px;
+}
+
+.calendar-cell,
+.calendar-header-cell {
+    width: 20%;
+    border: solid 1px black;
+    padding: 4px;
+}
+
+.current-day {
+    background-color: lightgray;
+}
+
+.event-cell {
+    background-color: orange;
+}
+
+#message.error {
+    color: red;
+    font-weight: bold;
+}
